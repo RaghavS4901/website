@@ -1,18 +1,16 @@
 ```javascript
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
-
     const options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1
+        threshold: 0.1 // Trigger when 10% of the section is visible
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('fade-in-up');
-                observer.unobserve(entry.target); // Stop observing after adding the class
             }
         });
     }, options);
