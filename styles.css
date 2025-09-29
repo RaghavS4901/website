@@ -1,22 +1,18 @@
 ```css
-:root { 
-    --primary: #4C1D95; 
-    --accent: #EC4899; 
-    --neutral: #F3F4F6; 
+:root {
+    --primary: #4C1D95;
+    --accent: #EC4899;
+    --neutral: #F3F4F6;
+    --bg-dark: #1F2937;
+    --bg-light: #F9FAFB;
 }
 
-@keyframes fadeInUp { 
-    0% { 
-        opacity: 0; 
-        transform: translateY(20px); 
-    } 
-    100% { 
-        opacity: 1; 
-        transform: translateY(0); 
-    } 
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in-up { 
-    animation: fadeInUp 1s ease-out forwards; 
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
 }
 ```
