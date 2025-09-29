@@ -1,60 +1,76 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Centralign.ai - Your Autonomous End-to-End AI COO for On-Demand Solutions">
-    <title>Centralign.ai - Landing Page</title>
-    <link data-filename="components/project/EnhancedAIChat" data-linenumber="231" data-visual-selector-id="components/project/EnhancedAIChat231" rel="stylesheet" href="styles.css">
+    <title>Centralign AI - Autonomous AI COO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Centralign.ai</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Centralign.ai</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="hero">
-            <h2>Your Autonomous AI COO</h2>
-            <p>Get anything made on demand with cutting-edge technology.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <article>
-                <h3>On-Demand Solutions</h3>
-                <p>We provide tailored AI solutions to meet your business needs.</p>
-            </article>
-            <article>
-                <h3>Consulting Services</h3>
-                <p>Expert guidance on integrating AI into your operations.</p>
-            </article>
-        </section>
-        <section id="about">
-            <h2>About Centralign.ai</h2>
-            <p>We are redefining the role of AI in business management, empowering organizations to operate more efficiently and creatively.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch for inquiries and collaborations.</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Submit</button>
+    
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Streamline Your Business with AI</h2>
+            <p class="hero-description">Get anything made on demand with our autonomous end-to-end solutions.</p>
+            <a href="#get-started" class="primary-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h3 class="section-title">Features</h3>
+            <div class="feature-item">
+                <h4 class="feature-title">On-Demand Production</h4>
+                <p class="feature-description">Produce assets whenever you need them with our seamless AI capabilities.</p>
+            </div>
+            <div class="feature-item">
+                <h4 class="feature-title">Autonomous Operations</h4>
+                <p class="feature-description">Let our AI manage tasks without needing human intervention.</p>
+            </div>
+            <div class="feature-item">
+                <h4 class="feature-title">User-Friendly Interface</h4>
+                <p class="feature-description">Experience a clean layout designed for easy navigation and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h3 class="section-title">About Us</h3>
+            <p class="about-description">At Centralign.ai, we are dedicated to revolutionizing the way businesses operate by providing autonomous AI solutions that allow for efficient and effective management of resources.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3 class="section-title">Contact Us</h3>
+            <form class="contact-form">
+                <input type="text" class="form-input" placeholder="Your Name" required>
+                <input type="email" class="form-input" placeholder="Your Email" required>
+                <textarea class="form-input" placeholder="Your Message" required></textarea>
+                <button type="submit" class="primary-button">Send Message</button>
             </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Centralign.ai. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Centralign.ai. All rights reserved.</p>
+        </div>
     </footer>
-    <script data-filename="components/project/EnhancedAIChat" data-linenumber="232" data-visual-selector-id="components/project/EnhancedAIChat232" src="script.js"></script>
+    
+    <script src="script.js" defer></script>
 </body>
 </html>
-```
