@@ -1,0 +1,278 @@
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centralign.ai - Your autonomous end-to-end AI COO service">
+    <link rel="stylesheet" href="styles.css">
+    <title>Centralign.ai - On-Demand AI COO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Centralign.ai</h1>
+            <p>Your autonomous end-to-end AI COO - Get anything made on demand.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Service 1</h3>
+                <p>Description of service 1.</p>
+            </div>
+            <div class="card">
+                <h3>Service 2</h3>
+                <p>Description of service 2.</p>
+            </div>
+            <div class="card">
+                <h3>Service 3</h3>
+                <p>Description of service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>User Testimonials</h2>
+        <div class="testimonial-cards">
+            <blockquote class="testimonial-card">
+                <p>"Centralign.ai transformed our operations!"</p>
+                <cite>- Client A</cite>
+            </blockquote>
+            <blockquote class="testimonial-card">
+                <p>"Incredible on-demand services!"</p>
+                <cite>- Client B</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">Question 1?</h3>
+                <div class="accordion-content">
+                    <p>Answer to question 1.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">Question 2?</h3>
+                <div class="accordion-content">
+                    <p>Answer to question 2.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Centralign.ai</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+```
+
+```css
+/* styles.css */
+:root {
+    --teal: #008080;
+    --white: #FFFFFF;
+    --dark-gray: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+header {
+    background: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1s forwards;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s forwards;
+}
+
+.cta-button {
+    background: var(--teal);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: darken(var(--teal), 10%);
+}
+
+.services, .testimonials, .faq, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-cards, .testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card, .testimonial-card, .accordion-item {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover, .testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.accordion-header {
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+```
+
+```javascript
+// scripts.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Accordion functionality
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    // Contact form validation
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Simple validation
+        const inputs = form.querySelectorAll('input, textarea');
+        let valid = true;
+        inputs.forEach(input => {
+            if (!input.value) {
+                valid = false;
+                input.classList.add('error');
+            } else {
+                input.classList.remove('error');
+            }
+        });
+        if (valid) alert('Form submitted successfully!');
+    });
+});
+```
