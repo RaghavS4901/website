@@ -1,0 +1,254 @@
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centralign.ai - Your autonomous AI COO for on-demand services.">
+    <meta name="keywords" content="AI, COO, on-demand services, automation">
+    <meta name="author" content="Centralign.ai">
+    <link rel="stylesheet" href="styles.css">
+    <title>Centralign.ai - Autonomous AI COO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Centralign.ai</h1>
+            <p>Your autonomous AI COO for on-demand services.</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Service One</h3>
+                <p>Details about Service One.</p>
+            </div>
+            <div class="service-card">
+                <h3>Service Two</h3>
+                <p>Details about Service Two.</p>
+            </div>
+            <div class="service-card">
+                <h3>Service Three</h3>
+                <p>Details about Service Three.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>User Testimonials</h2>
+        <blockquote>
+            <p>"Centralign.ai has transformed our operations!" - Happy Client</p>
+        </blockquote>
+        <blockquote>
+            <p>"An invaluable partner for our business." - Satisfied Customer</p>
+        </blockquote>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question" tabindex="0">What is an AI COO?</h3>
+            <div class="faq-answer" aria-hidden="true">
+                <p>An AI COO automates and streamlines your business operations using advanced AI technologies.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" tabindex="0">How does Centralign.ai work?</h3>
+            <div class="faq-answer" aria-hidden="true">
+                <p>Centralign.ai operates seamlessly to manage your business tasks on demand.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Centralign.ai. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+```css
+/* styles.css */
+:root {
+    --teal: #008080;
+    --white: #FFFFFF;
+    --dark-gray: #333333;
+    --transition-time: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--teal);
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-button {
+    background: var(--white);
+    color: var(--teal);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-time);
+}
+
+.cta-button:hover {
+    background: var(--teal);
+    color: var(--white);
+}
+
+.services {
+    padding: 2rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    border: 1px solid var(--dark-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform var(--transition-time);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonials {
+    padding: 2rem;
+    background: var(--gray);
+}
+
+.faq {
+    padding: 2rem;
+    background: var(--white);
+}
+
+.faq-item {
+    margin: 1rem 0;
+}
+
+.faq-question {
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+}
+
+.contact {
+    padding: 2rem;
+    background: var(--white);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, 
+.contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--dark-gray);
+}
+
+.contact button {
+    padding: 10px;
+    background: var(--teal);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-time);
+}
+
+.contact button:hover {
+    background: var(--dark-gray);
+}
+```
+
+```javascript
+// script.js
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        answer.setAttribute('aria-hidden', answer.style.display !== 'block');
+    });
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    // Implement form submission logic here (e.g., AJAX call)
+    alert('Message sent!'); // Placeholder for demonstration
+    this.reset(); // Reset form fields after submission
+});
+```
