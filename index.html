@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-filename="components/project/EnhancedAIChat" data-linenumber="150" data-visual-selector-id="components/project/EnhancedAIChat150">
+<head data-filename="components/project/EnhancedAIChat" data-linenumber="151" data-visual-selector-id="components/project/EnhancedAIChat151">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centralign.ai - Your AI COO</title>
-    <link data-filename="components/project/EnhancedAIChat" data-linenumber="145" data-visual-selector-id="components/project/EnhancedAIChat145" rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet" data-filename="components/project/EnhancedAIChat" data-linenumber="146" data-visual-selector-id="components/project/EnhancedAIChat146">
+    <title>Centralign.ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link data-filename="components/project/EnhancedAIChat" data-linenumber="150" data-visual-selector-id="components/project/EnhancedAIChat150" rel="stylesheet" href="styles.css">
+    <script data-filename="components/project/EnhancedAIChat" data-linenumber="260" data-visual-selector-id="components/project/EnhancedAIChat260" src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <header class="main-header">
-        <div class="container">
-            <h1>Your Autonomous AI COO</h1>
-            <p>Get anything made on demand with Centralign.ai</p>
-            <a href="#services" class="btn-primary">Explore Services</a>
+<body class="bg-gray-100 font-roboto">
+    <header class="bg-gradient-to-br from-purple-700 to-purple-900 p-6">
+        <div class="container mx-auto text-white flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Centralign.ai</h1>
+            <img data-filename="components/project/EnhancedAIChat" data-linenumber="154" data-visual-selector-id="components/project/EnhancedAIChat154" src="https://base44.app/api/apps/68d8bc0ae765019ac9d7c86f/files/public/68d8bc0ae765019ac9d7c86f/21a4eac0f_2-removebg-preview.png" alt="Logo" class="h-12">
         </div>
     </header>
-
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-card">
-                <h3>Product Development</h3>
-                <p>Leverage our AI capabilities for rapid product development and innovation.</p>
-                <a href="#" class="btn-secondary">Learn More</a>
+    <section id="hero" class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image:url('https://source.unsplash.com/random/1920x1080/?ai');">
+        <div class="bg-black bg-opacity-50 p-12 text-center rounded-lg">
+            <h2 class="text-4xl text-white font-bold mb-4">Get Anything Made On Demand</h2>
+            <p class="text-lg text-gray-300 mb-6">Experience autonomous AI solutions that empower your business.</p>
+            <a href="#features" class="bg-purple-500 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded">Discover More</a>
+        </div>
+    </section>
+    <section id="features" class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-purple-900 mb-6">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white shadow-lg rounded-lg p-6 transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold text-purple-600">Feature 1</h3>
+                <p class="text-gray-600">Description of feature 1.</p>
             </div>
-            <div class="service-card">
-                <h3>Market Analysis</h3>
-                <p>Utilize data-driven insights for strategic market positioning.</p>
-                <a href="#" class="btn-secondary">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Task Automation</h3>
-                <p>Automate your business tasks for enhanced efficiency.</p>
-                <a href="#" class="btn-secondary">Learn More</a>
+            <div class="bg-white shadow-lg rounded-lg p-6 transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold text-purple-600">Feature 2</h3>
+                <p class="text-gray-600">Description of feature 2.</p>
             </div>
         </div>
     </section>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2023 Centralign.ai. All rights reserved.</p>
+    <section id="testimonials" class="bg-purple-100 p-8">
+        <h2 class="text-3xl font-bold text-purple-900 mb-6 text-center">Testimonials</h2>
+        <div class="flex flex-col md:flex-row justify-center">
+            <div class="bg-white shadow-md rounded-lg p-6 m-4 flex-1">
+                <p class="text-gray-600">"Centralign.ai changed the way we do business!"</p>
+                <p class="text-gray-700 font-semibold mt-2">- Client A</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 m-4 flex-1">
+                <p class="text-gray-600">"A must-have tool for any company!"</p>
+                <p class="text-gray-700 font-semibold mt-2">- Client B</p>
+            </div>
         </div>
+    </section>
+    <footer class="bg-purple-900 text-white py-6 text-center">
+        <p>&copy; 2023 Centralign.ai. All rights reserved.</p>
     </footer>
-
-    <script data-filename='components/project/EnhancedAIChat' data-linenumber='145' data-visual-selector-id='components/project/EnhancedAIChat145' src="script.js" defer></script>
+    <script data-filename='components/project/EnhancedAIChat' data-linenumber='150' data-visual-selector-id='components/project/EnhancedAIChat150' src="script.js" defer></script>
 </body>
 </html>
