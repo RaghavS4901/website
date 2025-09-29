@@ -5,98 +5,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Centralign.ai - Your autonomous end-to-end AI COO service">
+    <meta name="description" content="Centralign.ai - Your autonomous AI COO for on-demand solutions.">
+    <meta name="keywords" content="AI, COO, automation, solutions, Centralign">
+    <meta name="author" content="Centralign.ai">
+    <title>Centralign.ai - Autonomous AI COO</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Centralign.ai - On-Demand AI COO</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#faq">FAQ</a></li>
+            <div class="logo">Centralign.ai</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="cta-button">Get Started</button>
         </nav>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Centralign.ai</h1>
-            <p>Your autonomous end-to-end AI COO - Get anything made on demand.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Centralign.ai</h1>
+            <p>Your autonomous end-to-end AI COO for on-demand solutions.</p>
+            <a href="#contact" class="cta-button">Learn More</a>
+        </section>
 
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Service 1</h3>
-                <p>Description of service 1.</p>
-            </div>
-            <div class="card">
-                <h3>Service 2</h3>
-                <p>Description of service 2.</p>
-            </div>
-            <div class="card">
-                <h3>Service 3</h3>
-                <p>Description of service 3.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials" id="testimonials">
-        <h2>User Testimonials</h2>
-        <div class="testimonial-cards">
-            <blockquote class="testimonial-card">
-                <p>"Centralign.ai transformed our operations!"</p>
-                <cite>- Client A</cite>
-            </blockquote>
-            <blockquote class="testimonial-card">
-                <p>"Incredible on-demand services!"</p>
-                <cite>- Client B</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <section class="faq" id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <h3 class="accordion-header">Question 1?</h3>
-                <div class="accordion-content">
-                    <p>Answer to question 1.</p>
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Automated Processes</h3>
+                    <p>Streamline workflows with AI-driven automation.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-Time Insights</h3>
+                    <p>Get data-driven insights at your fingertips.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>On-Demand Solutions</h3>
+                    <p>Access tailored solutions anytime, anywhere.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h3 class="accordion-header">Question 2?</h3>
-                <div class="accordion-content">
-                    <p>Answer to question 2.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Centralign.ai is at the forefront of AI technology, bringing innovative solutions to your business needs through an autonomous AI COO.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Centralign.ai</p>
+        <p>&copy; 2023 Centralign.ai. All Rights Reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -104,175 +77,145 @@
 ```css
 /* styles.css */
 :root {
+    --deep-blue: #003366;
+    --crisp-white: #ffffff;
     --teal: #008080;
-    --white: #FFFFFF;
-    --dark-gray: #333333;
+    --transition-speed: 0.3s;
 }
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: var(--dark-gray);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--crisp-white);
+    color: var(--deep-blue);
 }
 
 header {
-    background: var(--white);
+    background: var(--deep-blue);
     padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav ul {
+nav {
     display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark-gray);
-}
-
-.hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    animation: fadeIn 1s forwards;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    animation: fadeIn 1.5s forwards;
+.nav-links a {
+    color: var(--crisp-white);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.nav-links a:hover {
+    color: var(--teal);
 }
 
 .cta-button {
     background: var(--teal);
-    color: var(--white);
-    padding: 0.75rem 1.5rem;
+    color: var(--crisp-white);
     border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background var(--transition-speed);
 }
 
 .cta-button:hover {
-    background: darken(var(--teal), 10%);
+    background: var(--deep-blue);
 }
 
-.services, .testimonials, .faq, .contact {
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    background: var(--deep-blue);
+    color: var(--crisp-white);
+}
+
+.features {
+    padding: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-item {
+    background: var(--teal);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--crisp-white);
+    transition: transform var(--transition-speed);
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.about, .contact {
     padding: 2rem;
     text-align: center;
 }
 
-.service-cards, .testimonial-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
-.card, .testimonial-card, .accordion-item {
-    background: var(--white);
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover, .testimonial-card:hover {
-    transform: scale(1.05);
-}
-
-.accordion-header {
-    cursor: pointer;
-    margin: 1rem 0;
-}
-
-.accordion-content {
-    display: none;
+input, textarea {
+    width: 80%;
+    max-width: 400px;
     padding: 0.5rem;
+    border: 1px solid var(--deep-blue);
+    border-radius: 4px;
 }
 
 footer {
     text-align: center;
-    background: var(--dark-gray);
-    color: var(--white);
-    padding: 1rem 0;
+    padding: 1rem;
+    background: var(--deep-blue);
+    color: var(--crisp-white);
 }
 
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .hero-content p {
-        font-size: 1.2rem;
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
     }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 ```
 
 ```javascript
-// scripts.js
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Accordion functionality
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-            const content = header.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-
-    // Contact form validation
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Simple validation
-        const inputs = form.querySelectorAll('input, textarea');
-        let valid = true;
-        inputs.forEach(input => {
-            if (!input.value) {
-                valid = false;
-                input.classList.add('error');
-            } else {
-                input.classList.remove('error');
-            }
-        });
-        if (valid) alert('Form submitted successfully!');
-    });
+// script.js
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Your message has been sent!');
+    this.reset();
 });
 ```
